@@ -2,7 +2,7 @@ package behaviours;
 
 public interface ISecurity {
 
-//    boolean authorised(persons.Visitor visitor);
+    boolean authorised(persons.Visitor visitor);
 
 
 }

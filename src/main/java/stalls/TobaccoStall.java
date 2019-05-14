@@ -1,6 +1,9 @@
 package stalls;
 
-public class TobaccoStall extends Stall{
+import behaviours.ISecurity;
+import persons.Visitor;
+
+public class TobaccoStall extends Stall implements ISecurity {
 
     private int minAge;
 
@@ -11,5 +14,14 @@ public class TobaccoStall extends Stall{
 
     public int getMinAge() {
         return minAge;
+    }
+
+    @Override
+    public boolean authorised(Visitor visitor) {
+        if (visitor.getAge() >= this.minAge){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
