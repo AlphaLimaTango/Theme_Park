@@ -29,4 +29,9 @@ public class PlaygroundTest {
     public void canAuthoriseVisitor(){
         assertEquals(true, playground.authorised(visitor1));
     }
+
+    @Test
+    public void cannotAuthoriseVisitor(){
+        assertEquals(false, playground.authorised(visitor2));
+    }
 }
