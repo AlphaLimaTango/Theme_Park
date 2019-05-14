@@ -15,8 +15,9 @@ public class PlaygroundTest {
 
     @Before
     public void before(){
-        playground = new Playground();
-        visitor1 = new Visitor();
+        playground = new Playground("soft play", 6);
+        visitor1 = new Visitor(6, 100, 5.0);
+        visitor2 = new Visitor(18, 170, 15.0);
     }
 
     @Test
@@ -26,6 +27,6 @@ public class PlaygroundTest {
 
     @Test
     public void canAuthoriseVisitor(){
-        assertEquals();
+        assertEquals(true, playground.authorised(visitor1));
     }
 }
