@@ -1,5 +1,8 @@
+package persons_tests;
+
 import org.junit.Before;
 import org.junit.Test;
+import persons.Visitor;
 
 import static org.junit.Assert.assertEquals;
 

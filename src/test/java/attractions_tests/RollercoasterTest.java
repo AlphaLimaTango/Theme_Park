@@ -12,7 +12,7 @@ public class RollercoasterTest {
 
     @Before
     public void before(){
-        rollercoaster = new Rollercoaster();
+        rollercoaster = new Rollercoaster("Death Scare", 20);
     }
 
     @Test

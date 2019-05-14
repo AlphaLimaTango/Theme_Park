@@ -1,11 +1,12 @@
 package attractions;
 
-public class Rollercoaster {
+public class Rollercoaster extends Attraction {
 
     private int minAge;
     private int minHeight;
 
-    public Rollercoaster() {
+    public Rollercoaster(String name, int rating) {
+        super(name, rating);
         this.minAge = 12;
         this.minHeight = 145;
     }
