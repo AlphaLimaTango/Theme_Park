@@ -19,4 +19,5 @@ public class TobaccoTest {
     public void canGetMinAge(){
         assertEquals(18, tobacco.getMinAge());
     }
+
 }
