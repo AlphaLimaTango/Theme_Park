@@ -20,8 +20,8 @@ public class RollercoasterTest {
         rollercoaster = new Rollercoaster("Death Scare", 20);
         visitor1 = new Visitor(21, 150, 25.0);
         visitor2 = new Visitor(21, 130, 5.0);
-        visitor3 = new Visitor(16, 150, 15.0);
-        visitor4 = new Visitor(16, 130, 15.0);
+        visitor3 = new Visitor(10, 150, 15.0);
+        visitor4 = new Visitor(10, 130, 15.0);
     }
 
     @Test
